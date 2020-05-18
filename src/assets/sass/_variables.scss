@@ -1,0 +1,50 @@
+$color-text: #111111;
+$color-font-16: #827b7b;
+$white: #ffffff;
+
+$desktop-columns: 12;
+$desktop-sideMargin: 80px;
+$desktop-gutter: 40px;
+$desktop-breakpoint: 1400px;
+
+$tablet-columns: 12;
+$tablet-sideMargin: 60px;
+$tablet-gutter: 30px;
+$tablet-breakpoint: 1020px;
+
+$mobile-columns: 12;
+$mobile-sideMargin: 32px;
+$mobile-gutter: 20px;
+$mobile-breakpoint: 620px;
+
+$desk-width: 100% - (($desktop-sideMargin * 2 / $desktop-breakpoint) * 100%);
+
+$tab-width: 100% - (($tablet-sideMargin * 2 / $tablet-breakpoint) * 100%);
+
+$mob-width: 100% - (($mobile-sideMargin * 2 / $mobile-breakpoint) * 100%);
+
+$desk-gutter: (
+  ($desktop-gutter / ($desktop-breakpoint - ($desktop-sideMargin * 2))) * 100%
+);
+
+$tab-gutter: (
+  ($tablet-gutter / ($tablet-breakpoint - ($tablet-sideMargin * 2))) * 100%
+);
+
+$mob-gutter: (
+  ($mobile-gutter / ($mobile-breakpoint - ($mobile-sideMargin * 2))) * 100%
+);
+
+$font-blue-nt-18-font-size: 18px;
+$font-blue-nt-18-line-height: 30px;
+$font-blue-nt-18-color: $color-text;
+$font-blue-nt-18-letter-spacing: -0.6px;
+$font-blue-nt-18-font-weight: 700;
+$font-blue-nt-18-font-family: Nunito, Arial;
+
+$font-blue-nt-16-font-size: 16px;
+$font-blue-nt-16-line-height: 20px;
+$font-blue-nt-16-color: $color-font-16;
+$font-blue-nt-16-letter-spacing: -0.6px;
+$font-blue-nt-16-font-weight: 300;
+$font-blue-nt-16-font-family: Nunito, Arial;

@@ -1,0 +1,19 @@
+@import "grid.scss";
+@import "favorite.scss";
+@import "footer.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  top: 0;
+}
+
+a {
+  @include font-blue-nt-18();
+  text-decoration: none;
+  color: $white;
+}
+
+li {
+  list-style: none;
+}

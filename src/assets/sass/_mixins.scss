@@ -1,0 +1,49 @@
+@import "variables";
+@import "functions";
+
+@mixin col-props($i, $columns, $gutter) {
+  box-sizing: border-box;
+  width: col-width($i, $columns);
+  padding-left: $gutter / 2;
+  padding-right: $gutter / 2;
+}
+
+@mixin columns-loop($name, $columns, $gutter) {
+  @for $i from 0 to $columns {
+    &-#{$name}-#{$i} {
+      @include col-props($i, $columns, $gutter);
+    }
+    &-#{$name}-shift-#{$i} {
+      margin-left: col-width($i, $columns);
+    }
+  }
+}
+
+@mixin grid-base($width) {
+  box-sizing: border-box;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  max-width: $desktop-breakpoint;
+  width: $width;
+}
+
+@mixin font-blue-nt-18() {
+  font-size: $font-blue-nt-18-font-size;
+  line-height: $font-blue-nt-18-line-height;
+  color: $font-blue-nt-18-color;
+  letter-spacing: $font-blue-nt-18-letter-spacing;
+  font-weight: $font-blue-nt-18-font-weight;
+  font-family: $font-blue-nt-18-font-family;
+}
+
+@mixin font-blue-nt-16 {
+  font-size: $font-blue-nt-16-font-size;
+  line-height: $font-blue-nt-16-line-height;
+  letter-spacing: $font-blue-nt-16-letter-spacing;
+  text-align: justify;
+  color: $color-font-16;
+  font-weight: $font-blue-nt-16-font-weight;
+  font-family: $font-blue-nt-16-font-family;
+}

@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "functions.scss";
+@import "mixins.scss";
+
+.grid {
+  @include grid-base($desk-width);
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    width: $tab-width;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: $mob-width;
+  }
+  &-0 {
+    @include grid-base(100%);
+  }
+}
+
+.col {
+  @include columns-loop(desk, $desktop-columns, $desk-gutter);
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    @include columns-loop(tab, $tablet-columns, $tab-gutter);
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    @include columns-loop(mob, $mobile-columns, $mob-gutter);
+  }
+}
