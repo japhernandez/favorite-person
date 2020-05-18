@@ -35,16 +35,16 @@ $mob-gutter: (
   ($mobile-gutter / ($mobile-breakpoint - ($mobile-sideMargin * 2))) * 100%
 );
 
-$font-blue-nt-18-font-size: 18px;
-$font-blue-nt-18-line-height: 30px;
+$font-blue-nt-18-font-size: 1.13rem;
+$font-blue-nt-18-line-height: 1.88rem;
 $font-blue-nt-18-color: $color-text;
-$font-blue-nt-18-letter-spacing: -0.6px;
+$font-blue-nt-18-letter-spacing: -0.038rem;
 $font-blue-nt-18-font-weight: 700;
 $font-blue-nt-18-font-family: Nunito, Arial;
 
-$font-blue-nt-16-font-size: 16px;
-$font-blue-nt-16-line-height: 20px;
+$font-blue-nt-16-font-size: 1rem;
+$font-blue-nt-16-line-height: 1.25rem;
 $font-blue-nt-16-color: $color-font-16;
-$font-blue-nt-16-letter-spacing: -0.6px;
+$font-blue-nt-16-letter-spacing: -0.038rem;
 $font-blue-nt-16-font-weight: 300;
 $font-blue-nt-16-font-family: Nunito, Arial;
